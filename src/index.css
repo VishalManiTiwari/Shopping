@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.slick-prev, .slick-next {
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: rgb(174, 0, 255);
+    font-size: 20px;
+  }
+  .slick-dots {
+    bottom: -40px; 
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: red; 
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #2980b9; 
+  }
+
+  /* product card */
+
+
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover .product-image {
+    transform: scale(1.1);
+  }
+  
+  .product-title {
+    transition: color 0.3s ease;
+  }
+  .product-card:hover .product-title {
+    color: #ff6600;
+  }
+  
